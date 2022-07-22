@@ -2,6 +2,7 @@ package br.com.fiap.banco;
 
 public class Conta {
 
+	// Atributos de Classes
 	int agencia;
 	int numero;
 	double saldo;
@@ -12,6 +13,7 @@ public class Conta {
 	}
 
 
+	// Construtor de Classe, Classe conta
 	public Conta(int agencia, int numero, double saldo) {
 		super();
 		this.agencia = agencia;
@@ -19,6 +21,10 @@ public class Conta {
 		this.saldo = saldo;
 	}
 
+	/**
+	 * Depositar da classe Conta
+	 * @param valor a ser depositado
+	 */
 	public void depositar (double valor) {
 
 		this.saldo += valor;
