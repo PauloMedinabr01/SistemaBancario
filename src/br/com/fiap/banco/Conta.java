@@ -5,13 +5,13 @@ public class Conta {
 	int agencia;
 	int numero;
 	double saldo;
-	
-	
+
+
 	public Conta () {
-		
+
 	}
 
-	
+
 	public Conta(int agencia, int numero, double saldo) {
 		super();
 		this.agencia = agencia;
@@ -19,5 +19,22 @@ public class Conta {
 		this.saldo = saldo;
 	}
 
-	
+	public void depositar (double valor) {
+
+		this.saldo += valor;
+
+	}
+
+	public void retirar (double valor) {
+
+		this.saldo -= valor;
+
+	}
+
+	public double verificarSaldo () {
+
+		return this.saldo;
+	}
+
+
 }
