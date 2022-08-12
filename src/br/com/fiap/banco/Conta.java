@@ -52,7 +52,7 @@ public class Conta implements Serializable {
 	 * @param agencia O numero da agencia
 	 * @param numero O numero da conta
 	 * @param saldo O valor a ser depositado
-	 * @return O numero do protocolo de confirma��o
+	 * @return O numero do protocolo de confirmação
 	 */
 
 	// Construtor de Classe, Classe conta
@@ -78,7 +78,7 @@ public class Conta implements Serializable {
 
 	/**
 	 * Retira um valor do Saldo da Conta
-	 * @param valor que ser� retirado
+	 * @param valor que será retirado
 	 * @see depositar
 	 */
 
@@ -98,6 +98,5 @@ public class Conta implements Serializable {
 		return this.saldo;
 
 	}
-
 
 }
