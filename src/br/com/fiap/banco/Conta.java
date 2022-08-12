@@ -1,17 +1,47 @@
 package br.com.fiap.banco;
 
+import java.io.Serializable;
+
 /**
  * Classe que abstrai uma Conta Bancaria
  * @author br_pa Paulo Medina
  * Version 1.0
  */
 
-public class Conta {
+public class Conta implements Serializable {
 
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	// Atributos de Classes
-	int agencia;
-	int numero;
-	double saldo;
+	private int agencia;
+	private int numero;
+	private double saldo;
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
 
 	public Conta () {
 
@@ -22,7 +52,7 @@ public class Conta {
 	 * @param agencia O numero da agencia
 	 * @param numero O numero da conta
 	 * @param saldo O valor a ser depositado
-	 * @return O numero do protocolo de confirmação
+	 * @return O numero do protocolo de confirmaï¿½ï¿½o
 	 */
 
 	// Construtor de Classe, Classe conta
@@ -48,7 +78,7 @@ public class Conta {
 
 	/**
 	 * Retira um valor do Saldo da Conta
-	 * @param valor que será retirado
+	 * @param valor que serï¿½ retirado
 	 * @see depositar
 	 */
 

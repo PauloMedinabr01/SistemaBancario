@@ -5,18 +5,18 @@ public class Teste {
 	public static void main(String[] args) {
 
 		Conta cc= new Conta ();
-		cc.saldo = 50.0;
-		cc.agencia = 123;
-		cc.numero = 321;
+		cc.depositar (50.0);
+		cc.setAgencia (123);
+		cc.setNumero (321);
 
 		cc.depositar(1000);
 
-		System.out.println( "Seu saldo em conta corrente é de R$ " + cc.verificarSaldo () );
+		System.out.println( "Seu saldo em conta corrente Ã© de R$ " + cc.getSaldo () );
 
 		Conta poupanca = new Conta (111, 222, 1000);
 		poupanca.retirar(50);
 
-		System.out.println( "Seu saldo em conta poupança é de R$ " + poupanca.verificarSaldo () );
+		System.out.println( "Seu saldo em conta poupanÃ§a Ã© de R$ " + poupanca.getSaldo () );
 
 
 
